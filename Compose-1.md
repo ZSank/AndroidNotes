@@ -5,7 +5,6 @@
 - Jetpack compose is interoperable with XML. Compose can be used inside xml and xml can be used inside compose.
 - Compose maker writing UI easier, more reusable.
 
-## Simple App with Compose
 ### What you will learn
 - Text, Column, Row composable. 
 
@@ -52,3 +51,27 @@
     ```
 - Rules about naming composable
     - Must start with capital letter. 
+
+## Basic composable
+### Text Composable
+- Text composable is used to show text. 
+- It has many properties like `fontSize`, `fontStyle`, `color`, `maxLines` etc.
+- Click `Ctrl + B`, to check the implementation and the properties of inbuilt code. 
+- `sp` is used for font size. 
+- `dp` is used for all other size in compose
+
+### Column Composable
+- 
+
+### Button
+
+### Image
+
+## Creating a simple App
+
+### Steps
+1. Create a new composable. 
+2. Add text composable. 
+3. Increase font size using `fontSize` parameter
+4. Add few more text. 
+5. Arrange them in a column. 
