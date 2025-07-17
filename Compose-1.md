@@ -78,7 +78,6 @@
 - Alignment
     - Column composable constructor takes modifier, `verticalArrangement`, `horizontalAlignment`, content. 
 - `verticalArrangement`
-    - 
 - `horizontalAlignment`
 - `padding`
     - Padding is spacing
