@@ -1,22 +1,18 @@
-# Compose
+# Compose Basics
 
-## Introduction
+
+### Resources
+- 
+### Introduction
 - Jetpack compose is used to show UI in Android app. It replaced XML layout.
 - Jetpack compose is interoperable with XML. Compose can be used inside xml and xml can be used inside compose.
 - Compose maker writing UI easier, more reusable.
-
-### What you will learn
-- Text, Column, Row composable. 
-
 ### About UI
 - Whatever we see on the screen is called a UI. The button, text, animation, images, calendar.
 - Everything is a separate elements. 
 - Complex UI will be build by grouping together basic UI elements. 
 
-### Jetpack Compose
-- It is a modern UI toolkit for Building Android UI. 
-
-### Composable Functions
+### Composable Functions Introduction
 - It is a function with `@Composable` annotation. 
 - This annotation makes it participate in the UI building process. This shown on the screen. 
 - Basic compose functions. 
@@ -61,11 +57,36 @@
 - `dp` is used for all other size in compose
 
 ### Column Composable
-- 
 
-### Button
+- Introduction
+    - Column is a simple composable. 
+    - Child composable are placed inside it's body. 
+    - It is used to arrange the children composable in a single column. 
+- Simple column code
+    ``` kotlin
+    @Composable
+    fun MyComp() {
+        Column() {
+            Text("Enter Name")
+            Text("Enter Number")
+        }
+    }
+    ```
+- Constructor (later)
+    - Column composable constructor takes modifier, `verticalArrangement`, `horizontalAlignment`, content. 
 
-### Image
+### Row Composable
+- Introduction
+    - Similar to column composable, row composable functions the same. 
+    - Key difference is, it arranges the children in a single row. 
+
+### Box Composable
+- Later
+
+### Button Composable
+- Later
+### Image Composable
+- Later
 
 ## Creating a simple App
 
