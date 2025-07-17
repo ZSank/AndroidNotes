@@ -81,6 +81,7 @@
     - 
 - `horizontalAlignment`
 - `padding`
+    - Padding is spacing
     - simple padding
         ```kotlin
         Column(
