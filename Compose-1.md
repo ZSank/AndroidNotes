@@ -42,3 +42,13 @@
         Text(text)
     }
     ```
+- Preview annotation with parameters
+    ``` kotlin
+    @Preview(showBackground = true, showSystemUI = true, name = "TextPreview")
+    @Composable
+    fun MyTextUI(text: String) {
+        Text(text)
+    }
+    ```
+- Rules about naming composable
+    - Must start with capital letter. 
