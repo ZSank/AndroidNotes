@@ -2,7 +2,7 @@
 
 
 ### Resources
-- 
+- [Get started with Jetpack Compose  |  Android Developers](https://developer.android.com/develop/ui/compose/documentation)
 ### Introduction
 - Jetpack compose is used to show UI in Android app. It replaced XML layout.
 - Jetpack compose is interoperable with XML. Compose can be used inside xml and xml can be used inside compose.
