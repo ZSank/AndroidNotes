@@ -55,9 +55,12 @@
 - Click `Ctrl + B`, to check the implementation and the properties of inbuilt code. 
 - `sp` is used for font size. 
 - `dp` is used for all other size in compose
+- `textAlign`
+    - Usage: `textAlign = TextAlign.Center`
+    - Available `textAlign` options: `Left, Right, Center, Justify, Start, End`
+- `lineHeight`: Add in `dp`
 
 ### Column Composable
-
 - Introduction
     - Column is a simple composable. 
     - Child composable are placed inside it's body. 
@@ -72,8 +75,18 @@
         }
     }
     ```
-- Constructor (later)
+- Alignment
     - Column composable constructor takes modifier, `verticalArrangement`, `horizontalAlignment`, content. 
+- `verticalArrangement`
+    - 
+- `horizontalAlignment`
+- `padding`
+    - simple padding
+        ```kotlin
+        Column(
+            modifier = modifier.padding(10.dp)
+        )
+        ```
 
 ### Row Composable
 - Introduction
