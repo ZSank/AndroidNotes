@@ -1,6 +1,7 @@
 # Compose Basics
 
 
+> In Android studio, enable `add unambiguous imports on fly`
 ### Resources
 - [Get started with Jetpack Compose  |  Android Developers](https://developer.android.com/develop/ui/compose/documentation)
 ### Introduction
@@ -101,6 +102,20 @@
 ### Image Composable
 - Later
 
+### Show Compose in the App
+- Add the composable in the `setContent{}` in the `onCreate`
+- Code
+``` kotlin
+class MainActivity : ComponentActivity() {  
+    override fun onCreate(savedInstanceState: Bundle?) {  
+        super.onCreate(savedInstanceState)  
+        enableEdgeToEdge()  
+        setContent {  
+            MyName()  
+        }  
+    }  
+}
+```
 ## Creating a simple App
 
 ### Steps
