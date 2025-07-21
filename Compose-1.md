@@ -117,7 +117,7 @@ class MainActivity : ComponentActivity() {
 }
 ```
 ## Creating a simple App
-- https://github.com/ZSank/IntroCard
+- Repo  [Link](https://github.com/ZSank/IntroCard)
 ### Steps
 1. Create a new composable. 
 2. Add text composable. 
