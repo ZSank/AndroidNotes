@@ -100,8 +100,23 @@
 ### Button Composable
 - Later
 ### Image Composable
-- Later
+- Basic code
+    ``` kotlin
+    val image = painterResource(R.drawable.my_image)
+    Image (
+        painter = image,
+        contentDescription = null
+    )
+    ```
+- `contentScale = ContentScale.Crop, alpha = 0.8F`
 
+### Modifier
+``` kotlin
+modifier = Modifier.background(color = Color.Green)
+Modifer.fillMaxWidth().fillMaxHeight().fillMaxSize()
+.padding(top= 5.dp).padding(all = 10.dp)
+
+```
 ### Show Compose in the App
 - Add the composable in the `setContent{}` in the `onCreate`
 - Code
@@ -117,10 +132,16 @@ class MainActivity : ComponentActivity() {
 }
 ```
 ## Creating a simple App
-- Repo  [Link](https://github.com/ZSank/IntroCard)
+- Repo [Link](https://github.com/ZSank/IntroCard)
 ### Steps
 1. Create a new composable. 
 2. Add text composable. 
 3. Increase font size using `fontSize` parameter
 4. Add few more text. 
 5. Arrange them in a column. 
+
+
+## Adding Image
+1. Add the Image using resources tab. 
+2. Image composable, refer the imported image. 
+3. Do arrangements. 
