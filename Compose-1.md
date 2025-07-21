@@ -117,6 +117,9 @@ Modifer.fillMaxWidth().fillMaxHeight().fillMaxSize()
 .padding(top= 5.dp).padding(all = 10.dp)
 
 ```
+
+### Arrangement
+- https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/Arrangement
 ### Show Compose in the App
 - Add the composable in the `setContent{}` in the `onCreate`
 - Code
