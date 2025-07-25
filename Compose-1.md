@@ -203,7 +203,14 @@ class MainActivity : ComponentActivity() {
     ```kotlin
     @Composable
     fun CounterWithState() {
-        var count by remember { mutableStateOf(0) }
+        //    simple variable, won't work with composable  
+        //    var count: Int = 0  
+          
+        //    Cannot survive configuration changes like screen rotation  
+        //    var count by remember { mutableStateOf(-1) }  
+          
+        //    Best way to declare state. Survives configuration changes.
+        var count by rememberSaveable { mutableStateOf(-1) }
     
         Button(onClick = {
             count++
@@ -234,7 +241,12 @@ class MainActivity : ComponentActivity() {
     ```
     1. `name` holds the user's typed input.
     2. The screen updates automatically as the user types.
-6. Summary:
+6. Configuration changes
+    1. Configuration changes happen when screen updates like orientation changes, theme update, keyboard layout change etc. 
+    2. State made using `remember` cannot survive config change. 
+    3. Use `rememberSaveable` instead of `remember`
+    4. `var count by rememberSaveable { mutableStateOf(-1) }`
+7. Summary:
     1. State holds values that the UI needs to remember.
     2. `mutableStateOf` creates state.
     3. `remember` keeps the value safe during screen updates.
